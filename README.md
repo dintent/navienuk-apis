@@ -14,7 +14,7 @@ We use API key for authenticate the call. For the details, please contact [DEEPE
 The Warranty API allows you to update the warranty year of an existing registration. 
 
 ```bash
-PUT /registrations/:registrationId/installers/:installerId/warranty
+PUT /installers/:installerId/registrations/:registrationId/warranty
 ```
 
 #### Input
