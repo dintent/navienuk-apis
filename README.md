@@ -9,7 +9,18 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 We use API key for authenticate the call. For the details, please contact [DEEPEYES App Support](app@deepeyes.co.uk).
 
-## Update Warranty
+## APIs
+
+### Update Product Information
+
+Push all product information including S/N and Model mappings
+
+```bash
+PUT /products
+```
+
+
+### Update Warranty
 
 The Warranty API allows you to update the warranty year of an existing registration. 
 
