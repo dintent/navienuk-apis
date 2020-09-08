@@ -19,6 +19,31 @@ Push all product information including S/N and Model mappings
 PUT /products
 ```
 
+Payload 
+
+```javascript
+{
+  [
+    {
+      "serial": "6662", 
+      "modelName":	"NCB 20 System"
+    },
+    {
+      "serial": "0129", 
+      "modelName":	"NCB 20 System"
+    },
+    {
+      "serial": "22418", 
+      "modelName":	"SmartPlus kit - Thermostat & Recevier"
+    },
+  ]
+}
+
+
+```
+
+
+
 
 ### Update Warranty
 
