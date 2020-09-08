@@ -120,7 +120,7 @@ GET /users/dates/:todays_date
 Example
 
 ```bash
-GET /users/20200908
+GET /users/dates/20200908
 ```
 
 Response
