@@ -66,10 +66,15 @@ Payload
 }
 ```
 
-### Get
+### Get the details of companies updated on the given date
 
 ```bash
-GET /companies/:todays_date
+GET /companies/dates/:todays_date
+```
+
+Example
+
+```bash
 GET /companies/20200908
 ```
 
@@ -103,3 +108,28 @@ PUT /installers/:installerId/registrations/:registrationId/warranty
   "warrantyYear": 7
 }
 ```
+
+## Installer Users
+
+### Get new installers registered on the given date
+
+```bash
+GET /users/dates/:todays_date
+```
+
+Example
+
+```bash
+GET /users/20200908
+```
+
+Response
+
+```javascript
+{
+  "familyName": "Test family name",
+  ....
+}
+```
+
+
