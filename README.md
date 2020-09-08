@@ -9,6 +9,12 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 We use API key for authenticate the call. For the details, please contact [DEEPEYES App Support](app@deepeyes.co.uk).
 
+Authentication header
+
+```javascript
+"x-api-key": "9c2kFTmLMKxxxxxxxxxx"
+```
+
 ## APIs
 
 ### Update Product Information
