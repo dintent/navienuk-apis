@@ -49,6 +49,25 @@ Payload
 ```
 
 
+### Create or update a company
+
+Create a new company with the company details
+
+```bash
+PUT /companies/:gas_safe_number
+```
+
+Payload 
+
+```javascript
+{
+
+}
+
+
+```
+
+
 
 
 ### Update Warranty
