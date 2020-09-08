@@ -88,27 +88,6 @@ Response
 ```
 
 
-### Update Warranty
-
-The Warranty API allows you to update the warranty year of an existing registration. 
-
-```bash
-PUT /installers/:installerId/registrations/:registrationId/warranty
-```
-
-#### Input
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| `wrrantyYear` | `integer` | **Required** the warranty year value you want to set |
-
-#### Example
-
-```javascript
-{
-  "warrantyYear": 7
-}
-```
-
 ## Installer Users
 
 ### Get new installers registered on the given date
@@ -151,6 +130,27 @@ Response
 ```javascript
 {
   ....
+}
+```
+
+### Update Warranty
+
+The Warranty API allows you to update the warranty year of an existing registration. 
+
+```bash
+PUT /registrations/:registrationId/warranty
+```
+
+#### Input
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| `wrrantyYear` | `integer` | **Required** the warranty year value you want to set |
+
+#### Example
+
+```javascript
+{
+  "warrantyYear": 7
 }
 ```
 
