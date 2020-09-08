@@ -132,4 +132,26 @@ Response
 }
 ```
 
+## Boiler registrations
+
+### Get new registrations
+
+```bash
+GET /registrations/dates/:todays_date
+```
+
+Example
+
+```bash
+GET /registrations/dates/20200908
+```
+
+Response
+
+```javascript
+{
+  ....
+}
+```
+
 
