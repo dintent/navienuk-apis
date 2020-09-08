@@ -48,6 +48,7 @@ Payload
 
 ```
 
+## Company
 
 ### Create or update a company
 
@@ -63,11 +64,23 @@ Payload
 {
 
 }
-
-
 ```
 
+### Get
 
+```bash
+GET /companies/:todays_date
+GET /companies/20200908
+```
+
+Response
+
+```javascript
+{
+  "companyName": "test company",
+  ....
+}
+```
 
 
 ### Update Warranty
