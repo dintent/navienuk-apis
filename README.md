@@ -21,7 +21,7 @@ Authentication header
 
 Push all the model and serial number mappings
 
-```bash
+```javascript
 PUT /models
 ```
 
@@ -53,7 +53,7 @@ PUT /models
 
 Create a new company with the company details
 
-```bash
+```javascript
 PUT /companies/:gas_safe_number
 ```
 
@@ -72,16 +72,16 @@ PUT /companies/207119
 }
 ```
 
-### Get the details of companies updated on the given date
+### Get the company details that is created or updated on the given date
 
-```bash
-GET /companies/dates/:todays_date
+```javascript
+GET /dates/:todays_date/companies
 ```
 
 Example
 
 ```bash
-GET /companies/20200908
+GET /dates/20200908/companies
 ```
 
 Response
@@ -96,16 +96,16 @@ Response
 
 ## Installer Users
 
-### Get new installers registered on the given date
+### Get new installer user details created or updated on the given date
 
 ```bash
-GET /users/dates/:todays_date
+GET /dates/:todays_date/users
 ```
 
 Example
 
 ```bash
-GET /users/dates/20200908
+GET /dates/20200908/users
 ```
 
 Response
@@ -122,13 +122,13 @@ Response
 ### Get new registrations
 
 ```bash
-GET /registrations/dates/:todays_date
+GET /dates/:todays_date/registrations
 ```
 
 Example
 
 ```bash
-GET /registrations/dates/20200908
+GET /dates/20200908/registrations
 ```
 
 Response
