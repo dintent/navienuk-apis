@@ -47,6 +47,11 @@ PUT /models
 }
 ```
 
+Response
+
+* 400 Bad Request: if the request is malformed
+* 200 Ok
+
 ## Company
 
 ### Create or update a company
@@ -72,6 +77,12 @@ PUT /companies/207119
   "OftecNumber": "xxxx",
 }
 ```
+
+Response
+
+* 400 Bad Request: if the request is malformed
+* 200 Ok
+
 
 ### Get the company details that is created or updated on the given date
 
@@ -104,6 +115,10 @@ GET /dates/20200908/companies
 }
 ```
 
+Response
+
+* 200 Ok
+
 
 ## Installer Users
 
@@ -126,6 +141,11 @@ GET /dates/20200908/users
   "companyNumber": "200000"
 }
 ```
+
+Response
+
+* 200 Ok
+
 
 ## Boiler registrations
 
@@ -182,6 +202,11 @@ GET /dates/20200908/registrations
 }
 ```
 
+Response
+
+* 200 Ok
+
+
 ### Update Warranty
 
 The Warranty API allows you to update the warranty year of an existing registration. 
@@ -190,17 +215,17 @@ The Warranty API allows you to update the warranty year of an existing registrat
 PUT /registrations/:registrationId/warranty
 ```
 
-#### Input
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| `wrrantyYear` | `integer` | **Required** the warranty year value you want to set |
-
-#### Example
+Example 
 
 ```javascript
+PUT /registrations/04732c10-d3f0-11ea-b6d7-759f92541fc9/warranty
+
 {
   "warrantyYear": 7
 }
 ```
 
+Response
 
+* 400 Bad Request: if the request is malformed
+* 200 Ok
