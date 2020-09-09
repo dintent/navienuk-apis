@@ -17,9 +17,9 @@ Authentication header
 
 ## APIs
 
-### Update Product Information
+### Update model and serial number mappings
 
-Push all product information including S/N and Model mappings
+Push all the model and serial number mappings
 
 ```bash
 PUT /products
@@ -36,7 +36,7 @@ Payload
     },
     {
       "serial": "0129", 
-      "modelName": "NCB 20 System"
+      "modelName": "NCB 28 Combi"
     },
     {
       "serial": "22418", 
