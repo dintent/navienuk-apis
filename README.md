@@ -61,6 +61,7 @@ Example
 
 ```javascript
 PUT /companies/207119
+
 {
   "businessName": "All Gas services",
   "address": "The Panorama Park Street Ashford Kent",
@@ -138,13 +139,46 @@ Example
 
 ```javascript
 GET /dates/20200908/registrations
-```
 
-Response
-
-```javascript
 {
-  ....
+  [
+    {
+      "registrationId": "cfcb77e0-ca64-11ea-8e5b-b1d62677deda",
+      "model": "LCB 700 Combi External 28KW",
+      "serialNumber": "1710U19Y0769003",
+      "installationDate": "09/07/2020",
+      "registrationDate": "20/07/2020",
+      "warrantyDate": "09/07/2030",
+      "warrantyYear": 10,
+      "firstName": "Tony",
+      "lastName": "Mudge",
+      "contactNo": "07554662557",
+      "emailAddress": "tonyandtriciamudge@sky.com",
+      "address1": "10 Millands Lane",
+      "city": "Bridgwater",
+      "county": "Somerset",
+      "postCode": "ta5 1ed",
+      "userId": "198d7a57-50d4-4adc-8b31-be5d41818704"
+    },  
+    {
+      "registrationId": "04732c10-d3f0-11ea-b6d7-759f92541fc9",
+      "model": "NCB 34 Combi",
+      "serialNumber": "0130J1870535001",
+      "installationDate": "01/08/2020",
+      "registrationDate": "01/08/2020",
+      "warrantyDate": "01/08/2028",
+      "warrantyYear": 8,
+      "firstName": "Kevin",
+      "lastName": "Lawson",
+      "contactNo": "07768310450",
+      "emailAddress": "fklawson@hotnail.com",
+      "address1": "32 Cove Hollow",
+      "city": "Bangor",
+      "county": "County Down",
+      "postCode": "BT19 6HT",
+      "userId": "1a1d9282-7f8f-4833-a9a0-2b3df06caf01"
+    }
+  ]
 }
 ```
 
