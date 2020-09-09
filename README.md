@@ -50,6 +50,7 @@ PUT /models
 Response
 
 * 400 Bad Request: if the request is malformed
+* 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
 
 ## Company
@@ -81,6 +82,7 @@ PUT /companies/207119
 Response
 
 * 400 Bad Request: if the request is malformed
+* 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
 
 
@@ -117,6 +119,7 @@ GET /dates/20200908/companies
 
 Response
 
+* 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
 
 
@@ -144,6 +147,7 @@ GET /dates/20200908/users
 
 Response
 
+* 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
 
 
@@ -204,6 +208,7 @@ GET /dates/20200908/registrations
 
 Response
 
+* 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
 
 
@@ -228,4 +233,5 @@ PUT /registrations/04732c10-d3f0-11ea-b6d7-759f92541fc9/warranty
 Response
 
 * 400 Bad Request: if the request is malformed
+* 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
