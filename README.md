@@ -80,16 +80,26 @@ GET /dates/:todays_date/companies
 
 Example
 
-```bash
-GET /dates/20200908/companies
-```
-
-Response
-
 ```javascript
+GET /dates/20200908/companies
+
 {
-  "companyName": "test company",
-  ....
+  [
+    {
+      "businessName": "All Gas services",
+      "address": "The Panorama Park Street Ashford Kent",
+      "postcode": "TN24 8DF",
+      "gasSafeNumber": "200001",
+      "OftecNumber": "xxxx",
+    },
+    {
+      "businessName": "Your Gas services",
+      "address": "The Regents Park Street, London",
+      "postcode": "N2 8DF",
+      "gasSafeNumber": "200000",
+      "OftecNumber": "xxxx",
+    }
+  ]
 }
 ```
 
@@ -98,22 +108,21 @@ Response
 
 ### Get new installer user details created or updated on the given date
 
-```bash
+```javascript
 GET /dates/:todays_date/users
 ```
 
 Example
 
-```bash
-GET /dates/20200908/users
-```
-
-Response
-
 ```javascript
+GET /dates/20200908/users
+
 {
-  "familyName": "Test family name",
-  ....
+  "firstname": "Michael",
+  "lastname": "Niblett",
+  "phone": "+447956598103",
+  "email": "info@allgasserv.com",
+  "companyNumber": "200000"
 }
 ```
 
@@ -121,13 +130,13 @@ Response
 
 ### Get new registrations
 
-```bash
+```javascript
 GET /dates/:todays_date/registrations
 ```
 
 Example
 
-```bash
+```javascript
 GET /dates/20200908/registrations
 ```
 
@@ -143,7 +152,7 @@ Response
 
 The Warranty API allows you to update the warranty year of an existing registration. 
 
-```bash
+```javascript
 PUT /registrations/:registrationId/warranty
 ```
 
