@@ -29,6 +29,7 @@ Example
 
 ```javascript
 PUT /models
+
 {
   [
     {
