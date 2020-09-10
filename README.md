@@ -229,13 +229,13 @@ Response
 The Warranty API allows you to update the warranty year of an existing registration. 
 
 ```javascript
-PUT /registrations/:registrationId/warranty
+PUT /registrations/:serialNumber/warranty
 ```
 
 Example 
 
 ```javascript
-PUT /registrations/04732c10-d3f0-11ea-b6d7-759f92541fc9/warranty
+PUT /registrations/1710U19Y0769003/warranty
 
 {
   "warrantyYear": 7
