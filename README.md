@@ -41,6 +41,30 @@ Response
 * 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
 
+```javascript
+PUT /models
+```
+
+Example
+
+```javascript
+PUT /models
+
+{
+  [
+    {
+      "serialNumber" "6662",
+      "modelName": "NCB 20 System"
+    },
+    {
+      "serialNumber" "0000",
+      "modelName": "NCB 00 System"
+    }
+  ]
+}
+```
+
+
 ## Company
 
 ### Create or update a company
