@@ -22,29 +22,16 @@ Authentication header
 Push all the model and serial number mappings
 
 ```javascript
-PUT /models
+PUT /models/:serial_number
 ```
 
 Example
 
 ```javascript
-PUT /models
+PUT /models/6662
 
 {
-  [
-    {
-      "serial": "6662", 
-      "modelName": "NCB 20 System"
-    },
-    {
-      "serial": "0129", 
-      "modelName": "NCB 28 Combi"
-    },
-    {
-      "serial": "22418", 
-      "modelName": "SmartPlus kit - Thermostat & Recevier"
-    },
-  ]
+  "modelName": "NCB 20 System"
 }
 ```
 
