@@ -84,10 +84,8 @@ PUT /companies/207119
   "businessName": "All Gas services",
   "address": "The Panorama Park Street Ashford Kent",
   "postcode": "TN24 8DF",
-  "phone": "+447956000000",
-  "email": "info@email.com",
   "gasSafeNumber": "207119",
-  "OftecNumber": "xxxx",
+  "oftecNumber": "xxxx",
 }
 ```
 
