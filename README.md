@@ -25,6 +25,14 @@ Push all the model and serial number mappings
 PUT /models/:serial_number
 ```
 
+Parameters
+
+| Name | Type | Parameter Type | Description |
+| ---- | ---- | -------------- | ----------- |
+| serial_number | string | path | serial number for the model |
+| modelName | string | json body | model name description |
+
+
 Example
 
 ```javascript
