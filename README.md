@@ -17,20 +17,13 @@ Authentication header
 
 ## APIs
 
-### Update model and serial number mappings
+### Update a mapping for model and serial number
 
 Push all the model and serial number mappings
 
 ```javascript
 PUT /models/:serial_number
 ```
-
-#### Parameters
-
-| Name | Type | Parameter Type | Description |
-| ---- | ---- | -------------- | ----------- |
-| serial_number | string | path | serial number for the model |
-| modelName | string | json body | model name description |
 
 
 #### Example
@@ -42,6 +35,14 @@ PUT /models/6662
   "modelName": "NCB 20 System"
 }
 ```
+
+#### Parameters
+
+| Name | Type | location | Description |
+| ---- | ---- | -------- | ----------- |
+| serial_number | string | path | serial number for the model |
+| modelName | string | json body | model name description |
+
 
 #### Response
 
@@ -92,10 +93,20 @@ PUT /companies/207119
   "businessName": "All Gas services",
   "address": "The Panorama Park Street Ashford Kent",
   "postcode": "TN24 8DF",
-  "gasSafeNumber": "207119",
   "oftecNumber": "xxxx",
 }
 ```
+
+#### Parameters
+
+| Name | Type | location | Description |
+| ---- | ---- | -------- | ----------- |
+| gas_safe_number | string | path | **key** Gas Safe Number identifier |
+| businessName | string | json body | business name of the company |
+| address | string | json body | the full address of the company |
+| postcode | string | json body | the postcode of the company |
+| oftecNumber | string | json body | (optional) the oil and heating tech number of the company |
+
 
 #### Response
 
