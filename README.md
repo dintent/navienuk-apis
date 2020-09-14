@@ -25,7 +25,7 @@ Push all the model and serial number mappings
 PUT /models/:serial_number
 ```
 
-Parameters
+#### Parameters
 
 | Name | Type | Parameter Type | Description |
 | ---- | ---- | -------------- | ----------- |
@@ -33,7 +33,7 @@ Parameters
 | modelName | string | json body | model name description |
 
 
-Example
+#### Example
 
 ```javascript
 PUT /models/6662
@@ -43,7 +43,7 @@ PUT /models/6662
 }
 ```
 
-Response
+#### Response
 
 * 400 Bad Request: if the request is malformed
 * 403 Forbidden: if the correct api key is not in the request header
@@ -53,7 +53,7 @@ Response
 PUT /models
 ```
 
-Example
+#### Example
 
 ```javascript
 PUT /models
@@ -83,7 +83,7 @@ Create a new company with the company details
 PUT /companies/:gas_safe_number
 ```
 
-Example
+#### Example
 
 ```javascript
 PUT /companies/207119
@@ -97,7 +97,7 @@ PUT /companies/207119
 }
 ```
 
-Response
+#### Response
 
 * 400 Bad Request: if the request is malformed
 * 403 Forbidden: if the correct api key is not in the request header
@@ -110,7 +110,7 @@ Response
 GET /dates/:todays_date/companies
 ```
 
-Example
+#### Example
 
 ```javascript
 GET /dates/20200908/companies
@@ -135,7 +135,7 @@ GET /dates/20200908/companies
 }
 ```
 
-Response
+#### Response
 
 * 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
@@ -149,7 +149,7 @@ Response
 GET /dates/:todays_date/users
 ```
 
-Example
+#### Example
 
 ```javascript
 GET /dates/20200908/users
@@ -163,7 +163,7 @@ GET /dates/20200908/users
 }
 ```
 
-Response
+#### Response
 
 * 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
@@ -177,7 +177,7 @@ Response
 GET /dates/:todays_date/registrations
 ```
 
-Example
+#### Example
 
 ```javascript
 GET /dates/20200908/registrations
@@ -224,7 +224,7 @@ GET /dates/20200908/registrations
 }
 ```
 
-Response
+#### Response
 
 * 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
@@ -238,7 +238,7 @@ The Warranty API allows you to update the warranty year of an existing registrat
 PUT /registrations/:serialNumber/warranty
 ```
 
-Example 
+#### Example 
 
 ```javascript
 PUT /registrations/1710U19Y0769003/warranty
@@ -248,7 +248,7 @@ PUT /registrations/1710U19Y0769003/warranty
 }
 ```
 
-Response
+#### Response
 
 * 400 Bad Request: if the request is malformed
 * 403 Forbidden: if the correct api key is not in the request header
