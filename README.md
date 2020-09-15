@@ -5,6 +5,15 @@ If you have any problems or requests, please contact [DEEPEYES App Support](app@
 
 All API access is over HTTPS, and all data is sent and received as JSON.
 
+## Updates
+
+| API Name | Status | 
+| -------- | ------ |
+| [Update a mapping for model and serial number](#update-a-mapping-for-model-and-serial-number) | To do |
+| [Create or update a company](#create-or-update-a-company) | Ready to use |
+| [Get a company details](#get-a-company-details) | Working |
+
+
 ## Authentication
 
 We use API key for authenticate the call. For the details, please contact [DEEPEYES App Support](app@deepeyes.co.uk).
@@ -14,6 +23,7 @@ Authentication header
 ```javascript
 "x-api-key": "9c2kFTmLMKxxxxxxxxxx"
 ```
+
 
 ## APIs
 
