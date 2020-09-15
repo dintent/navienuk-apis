@@ -20,7 +20,6 @@ Authentication header
 ### Update a mapping for model and serial number
 
 Push all the model and serial number mappings
-
 ```javascript
 PUT /models/:serial_number
 ```
@@ -88,7 +87,6 @@ PUT /companies/:gas_safe_number
 
 ```javascript
 PUT /companies/207119
-
 {
   "businessName": "All Gas services",
   "address": "The Panorama Park Street Ashford Kent",
@@ -115,6 +113,47 @@ PUT /companies/207119
 * 200 Ok
 
 
+## Company
+
+### Get a company details
+
+Get a company details by the given Gas Safe Number
+
+```javascript
+GET /companies/:gas_safe_number
+```
+
+#### Example
+
+```javascript
+GET /companies/207119
+```
+
+#### Parameters
+
+| Name | Type | location | Description |
+| ---- | ---- | -------- | ----------- |
+| gas_safe_number | string | path | **key** Gas Safe Number identifier |
+
+
+#### Response
+
+* 400 Bad Request: if the request is malformed
+* 403 Forbidden: if the correct api key is not in the request header
+* 200 Ok
+
+```javascript
+{
+    "GasSafeNumber": "256",
+    "BusinessName": "Test Gas Service",
+    "Address": "1 Infinite Loop",
+    "Postcode": "TN24 8DF",
+    "OftecNumber": "",
+    "Date": "20200913"
+}
+```
+
+
 ### Get the company details that is created or updated on the given date
 
 ```javascript
@@ -125,7 +164,6 @@ GET /dates/:todays_date/companies
 
 ```javascript
 GET /dates/20200908/companies
-
 {
   [
     {
