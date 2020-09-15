@@ -7,12 +7,12 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 ## Updates
 
-| API Name | Status | 
+| API Name | Development Status | 
 | -------- | ------ |
 | [Update a mapping for model and serial number](#update-a-mapping-for-model-and-serial-number) | To do |
-| [Create or update a company](#create-or-update-a-company) | Ready to use |
+| [Create or update a company](#create-or-update-a-company) | Completed, ready to use |
 | [Get a company details](#get-a-company-details) | Working |
-| [Get a registration details](#get-a-registration-details) | Working |
+| [Get a registration details](#get-a-registration-details) | Completed, ready to use |
 
 
 ## Authentication
