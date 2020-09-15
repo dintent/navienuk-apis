@@ -230,7 +230,55 @@ GET /dates/20200908/users
 
 ## Boiler registrations
 
-### Get new registrations
+### Get a registration details
+
+```javascript
+GET /registrations/:serialNumber
+```
+
+#### Parameters
+
+| Name | Type | location | Description |
+| ---- | ---- | -------- | ----------- |
+| serialNumber | string | path | **key** the serial number of the boiler |
+
+
+#### Example
+
+```javascript
+GET /registrations/1710U19Y0769003
+```
+
+
+#### Response
+
+* 403 Forbidden: if the correct api key is not in the request header
+* 200 Ok
+
+```javascript
+{
+  "serialNumber": "1710U19Y0769003",
+  "registrationId": "cfcb77e0-ca64-11ea-8e5b-b1d62677deda",
+  "model": "LCB 700 Combi External 28KW",
+  "installationDate": "09/07/2020",
+  "registrationDate": "20/07/2020",
+  "warrantyDate": "09/07/2030",
+  "warrantyYear": 10,
+  "firstName": "Tony",
+  "lastName": "Mudge",
+  "contactNo": "07554662557",
+  "emailAddress": "tonyandtriciamudge@sky.com",
+  "address1": "10 Millands Lane",
+  "city": "Bridgwater",
+  "county": "Somerset",
+  "postCode": "ta5 1ed",
+  "userId": "198d7a57-50d4-4adc-8b31-be5d41818704"
+}
+```
+
+
+
+### Get new or updated registrations
 
 ```javascript
 GET /dates/:todays_date/registrations
