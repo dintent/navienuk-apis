@@ -9,10 +9,13 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 | API Name | Development Status | 
 | -------- | ------ |
-| [Update a mapping for model and serial number](#update-a-mapping-for-model-and-serial-number) | To do |
+| [Update model and serial number mappings](#update-model-and-serial-number-mappings) | To do |
 | [Create or update a company](#create-or-update-a-company) | Completed, ready to use |
 | [Get a company details](#get-a-company-details) | Working |
 | [Get a registration details](#get-a-registration-details) | Completed, ready to use |
+| [Get new or updated registrations](#get-a-registration-details) | To do |
+| [Update Warranty](#update-warranty) | To do |
+
 
 
 ## Authentication
@@ -28,37 +31,9 @@ Authentication header
 
 ## APIs
 
-### Update a mapping for model and serial number
+### Update model and serial number mappings
 
-Push all the model and serial number mappings
-```javascript
-PUT /models/:serial_number
-```
-
-
-#### Example
-
-```javascript
-PUT /models/6662
-
-{
-  "modelName": "NCB 20 System"
-}
-```
-
-#### Parameters
-
-| Name | Type | location | Description |
-| ---- | ---- | -------- | ----------- |
-| serial_number | string | path | serial number for the model |
-| modelName | string | json body | model name description |
-
-
-#### Response
-
-* 400 Bad Request: if the request is malformed
-* 403 Forbidden: if the correct api key is not in the request header
-* 200 Ok
+Update all the mappings for modes and serial number
 
 ```javascript
 PUT /models
@@ -68,7 +43,6 @@ PUT /models
 
 ```javascript
 PUT /models
-
 {
   [
     {
@@ -82,6 +56,20 @@ PUT /models
   ]
 }
 ```
+
+#### Parameters
+
+| Name | Type | location | Description |
+| ---- | ---- | -------- | ----------- |
+| serial_number | string | json body | serial number for the model |
+| modelName | string | json body | model name description |
+
+
+#### Response
+
+* 400 Bad Request: if the request is malformed
+* 403 Forbidden: if the correct api key is not in the request header
+* 200 Ok
 
 
 ## Company
