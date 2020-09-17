@@ -11,7 +11,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | -------- | ------ |
 | [Update model and serial number mappings](#update-model-and-serial-number-mappings) | To do |
 | [Create or update a company](#create-or-update-a-company) | Completed, ready to use |
-| [Get a company details](#get-a-company-details) | Working |
+| [Get a company details](#get-a-company-details) | Completed, ready to use |
 | [Get a registration details](#get-a-registration-details) | Completed, ready to use |
 | [Get new or updated registrations](#get-a-registration-details) | To do |
 | [Update Warranty](#update-warranty) | Completed, ready to use |
