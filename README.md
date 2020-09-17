@@ -13,7 +13,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | [Create or update a company](#create-or-update-a-company) | Completed, ready to use |
 | [Get a company details](#get-a-company-details) | Completed, ready to use |
 | [Get a registration details](#get-a-registration-details) | Completed, ready to use |
-| [Get new or updated registrations](#get-a-registration-details) | To do |
+| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | To do |
 | [Update Warranty](#update-warranty) | Completed, ready to use |
 
 
@@ -267,7 +267,7 @@ GET /registrations/1710U19Y0769003
 
 
 
-### Get new or updated registrations
+### Get a daliy list of new registrations
 
 ```javascript
 GET /dates/:todays_date/registrations
