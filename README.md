@@ -14,7 +14,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | [Get a company details](#get-a-company-details) | Working |
 | [Get a registration details](#get-a-registration-details) | Completed, ready to use |
 | [Get new or updated registrations](#get-a-registration-details) | To do |
-| [Update Warranty](#update-warranty) | To do |
+| [Update Warranty](#update-warranty) | Completed, ready to use |
 
 
 
