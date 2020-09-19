@@ -13,7 +13,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | [Create or update a company](#create-or-update-a-company) | Completed, ready to use |
 | [Get a company details](#get-a-company-details) | Completed, ready to use |
 | [Get a registration details](#get-a-registration-details) | Completed, ready to use |
-| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | To do |
+| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Completed, ready to use |
 | [Update Warranty](#update-warranty) | Completed, ready to use |
 
 
