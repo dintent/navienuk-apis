@@ -44,18 +44,18 @@ PUT /products
 ```json
 {
 	"products":[ 
-	  {
-		"serialNumberPrefix":"6662",
-		"modelName": "NCB 20 System"
-	  },
-	  {
-		"serialNumberPrefix":"0000",
-		"modelName": "NCB 00 System"
-	  },
-      {
-		"serialNumberPrefix":"1234",
-		"modelName": "NCB 1234 Boiler"
-	  }
+		{
+			"serialNumberPrefix":"6662",
+			"modelName": "NCB 20 System"
+		},
+		{
+			"serialNumberPrefix":"0000",
+			"modelName": "NCB 00 System"
+		},
+		{
+			"serialNumberPrefix":"1234",
+			"modelName": "NCB 1234 Boiler"
+		}
 	]
 }
 ```
@@ -64,7 +64,8 @@ PUT /products
 
 | Name | Type | location | Description |
 | ---- | ---- | -------- | ----------- |
-| serial_number | string | json body | serial number for the model |
+| projects | string | -- | name of the object array |
+| serialNumberPrfix | string | json body | serial number prefix for the model |
 | modelName | string | json body | model name description |
 
 
