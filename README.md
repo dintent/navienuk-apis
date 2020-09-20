@@ -26,7 +26,7 @@ We use API key for authenticate the call. For the details, please contact [DEEPE
 Authentication header
 
 ```javascript
-"x-api-key": "9c2kFTmLMKxxxxxxxxxx"
+"x-api-key": "xxxxxxxxxxxxxxxxx"
 ```
 
 
