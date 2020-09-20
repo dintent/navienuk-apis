@@ -9,11 +9,11 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 | API Name | Development Status | Operation Period |
 | -------- | ------ | ------ |
-| [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Completed, ready to use | daily(or when required) |
+| [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Completed, ready to use | on request |
 | [Create or update a company](#create-or-update-a-company) | Completed, ready to use | Realtime |
-| [Get a company details](#get-a-company-details) | Completed, ready to use | daily(or when required) |
-| [Get a registration details](#get-a-registration-details) | Completed, ready to use | daily(or when required) |
-| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Completed, ready to use | daily(or when required) |
+| [Get a company details](#get-a-company-details) | Completed, ready to use | on request |
+| [Get a registration details](#get-a-registration-details) | Completed, ready to use | on request |
+| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Completed, ready to use | daily(or on request) |
 | [Update Warranty](#update-warranty) | Completed, ready to use | Realtime |
  * sequence diagramme for the realtime APIs
    - ['Create an account' flow](#create-an-account-flow)
