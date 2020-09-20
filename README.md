@@ -359,7 +359,7 @@ PUT /registrations/1710U19Y0769003/warranty
 ## Sequence Diagram of realtime operation API
 
 ### Create an account flow 
-    ![image](https://user-images.githubusercontent.com/59367560/93712123-9c341780-fb4b-11ea-9292-e2fda7add0d0.png)
+![image](https://user-images.githubusercontent.com/59367560/93712123-9c341780-fb4b-11ea-9292-e2fda7add0d0.png)
 
 ### Update the warranty flow 
-    ![image](https://user-images.githubusercontent.com/59367560/93712154-df8e8600-fb4b-11ea-8faa-a1dac9c455e6.png)
+![image](https://user-images.githubusercontent.com/59367560/93712154-df8e8600-fb4b-11ea-8faa-a1dac9c455e6.png)
