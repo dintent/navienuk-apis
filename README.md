@@ -7,14 +7,17 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 ## Updates
 
-| API Name | Development Status | 
-| -------- | ------ |
-| [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Completed, ready to use |
-| [Create or update a company](#create-or-update-a-company) | Completed, ready to use |
-| [Get a company details](#get-a-company-details) | Completed, ready to use |
-| [Get a registration details](#get-a-registration-details) | Completed, ready to use |
-| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Completed, ready to use |
-| [Update Warranty](#update-warranty) | Completed, ready to use |
+| API Name | Development Status | Operation Period |
+| -------- | ------ | ------ |
+| [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Completed, ready to use | daily(or when required) |
+| [Create or update a company](#create-or-update-a-company) | Completed, ready to use | Realtime |
+| [Get a company details](#get-a-company-details) | Completed, ready to use | daily(or when required) |
+| [Get a registration details](#get-a-registration-details) | Completed, ready to use | daily(or when required) |
+| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Completed, ready to use | daily(or when required) |
+| [Update Warranty](#update-warranty) | Completed, ready to use | Realtime |
+
+
+## Sequence Diagram of realtime operation API
 
 
 
@@ -43,20 +46,20 @@ PUT /products
 
 ```json
 {
-	"products":[ 
-		{
-			"serialNumberPrefix":"6662",
-			"modelName": "NCB 20 System"
-		},
-		{
-			"serialNumberPrefix":"0000",
-			"modelName": "NCB 00 System"
-		},
-		{
-			"serialNumberPrefix":"1234",
-			"modelName": "NCB 1234 Boiler"
-		}
-	]
+  "products":[ 
+    {
+      "serialNumberPrefix": "6662",
+      "modelName": "NCB 20 System"
+    },
+    {
+      "serialNumberPrefix": "0000",
+      "modelName": "NCB 00 System"
+    },
+    {
+      "serialNumberPrefix": "1234",
+      "modelName": "NCB 1234 Boiler"
+    }
+  ]
 }
 ```
 
