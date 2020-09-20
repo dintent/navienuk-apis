@@ -15,11 +15,9 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | [Get a registration details](#get-a-registration-details) | Completed, ready to use | daily(or when required) |
 | [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Completed, ready to use | daily(or when required) |
 | [Update Warranty](#update-warranty) | Completed, ready to use | Realtime |
-
-
-## Sequence Diagram of realtime operation API
-
-
+  * sequence diagramme for the realtime APIs
+    - ['Create an account' flow]
+    - ['Update the warranty' flow]
 
 ## Authentication
 
@@ -356,3 +354,12 @@ PUT /registrations/1710U19Y0769003/warranty
 * 400 Bad Request: if the request is malformed
 * 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
+
+
+## Sequence Diagram of realtime operation API
+
+### 'Create an account' flow 
+![image](https://user-images.githubusercontent.com/59367560/93712123-9c341780-fb4b-11ea-9292-e2fda7add0d0.png)
+
+### 'Update the warranty' flow 
+![image](https://user-images.githubusercontent.com/59367560/93712154-df8e8600-fb4b-11ea-8faa-a1dac9c455e6.png)
