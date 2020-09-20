@@ -9,7 +9,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 | API Name | Development Status | 
 | -------- | ------ |
-| [Update model and serial number mappings](#update-model-and-serial-number-mappings) | To do |
+| [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Completed, ready to use |
 | [Create or update a company](#create-or-update-a-company) | Completed, ready to use |
 | [Get a company details](#get-a-company-details) | Completed, ready to use |
 | [Get a registration details](#get-a-registration-details) | Completed, ready to use |
@@ -33,27 +33,30 @@ Authentication header
 
 ### Update model and serial number mappings
 
-Update all the mappings for modes and serial number
+Update all the mappings for SerialNumber Prefix and Model Name
 
 ```javascript
-PUT /models
+PUT /products
 ```
 
 #### Example
 
-```javascript
-PUT /models
+```json
 {
-  [
-    {
-      "serialNumber" "6662",
-      "modelName": "NCB 20 System"
-    },
-    {
-      "serialNumber" "0000",
-      "modelName": "NCB 00 System"
-    }
-  ]
+	"products":[ 
+	  {
+		"serialNumberPrefix":"6662",
+		"modelName": "NCB 20 System"
+	  },
+	  {
+		"serialNumberPrefix":"0000",
+		"modelName": "NCB 00 System"
+	  },
+      {
+		"serialNumberPrefix":"1234",
+		"modelName": "NCB 1234 Boiler"
+	  }
+	]
 }
 ```
 
