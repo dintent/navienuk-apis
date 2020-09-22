@@ -196,6 +196,45 @@ GET /dates/20200908/companies
 
 ## Installer Users
 
+### Search users by email address
+
+```javascript
+GET /search/users?email=:email_address
+```
+
+#### Example
+
+```javascript
+GET /search/users?email=Alex.ponting@navienuk.com
+
+{
+ "Users": [
+   {
+      "GasSafeNumber": "Test2",
+      "Username": "Alextest",
+      "InstallerId": "baa8ef8a-35a5-4f82-95e3-4b11d123640a",
+      "Email": "Alex.ponting@navienuk.com",
+      "FamilyName": "Ponting",
+      "GivenName": "Alex",
+      "PhoneNumber": "+4407833096083",
+      "EmailVerified": true,
+      "UserStatus": "CONFIRMED"
+  },
+  {
+      "GasSafeNumber": "",
+      "Username": "Alex123",
+      "InstallerId": "718400f2-9f76-46f2-986d-6e6a5601dc84",
+      "Email": "Alex.ponting@navienuk.com",
+      "FamilyName": "Ponting",
+      "GivenName": "Alex ",
+      "PhoneNumber": "+4407833096083",
+      "EmailVerified": true,
+      "UserStatus": "CONFIRMED"
+  }
+ ]
+}
+```
+
 ### Get new installer user details created or updated on the given date
 
 ```javascript
