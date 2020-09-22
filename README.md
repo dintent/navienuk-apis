@@ -148,12 +148,12 @@ GET /companies/207119
 
 ```javascript
 {
-    "GasSafeNumber": "256",
-    "BusinessName": "Test Gas Service",
-    "Address": "1 Infinite Loop",
-    "Postcode": "TN24 8DF",
+    "GasSafeNumber": "123456",
+    "BusinessName": "Tamgas",
+    "Address": "12 Nelson St",
+    "Postcode": "KA26 9AP",
     "OftecNumber": "",
-    "Date": "20200913"
+    "Date": "2020-09-18T00:00:00"
 }
 ```
 
