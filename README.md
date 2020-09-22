@@ -240,7 +240,7 @@ GET /registrations/:serialNumber
 #### Example
 
 ```javascript
-GET /registrations/1710U19Y0769003
+GET /registrations/0128T18X2438040
 ```
 
 
@@ -251,22 +251,23 @@ GET /registrations/1710U19Y0769003
 
 ```javascript
 {
-  "serialNumber": "1710U19Y0769003",
-  "registrationId": "cfcb77e0-ca64-11ea-8e5b-b1d62677deda",
-  "model": "LCB 700 Combi External 28KW",
-  "installationDate": "09/07/2020",
-  "registrationDate": "20/07/2020",
-  "warrantyDate": "09/07/2030",
-  "warrantyYear": 10,
-  "firstName": "Tony",
-  "lastName": "Mudge",
-  "contactNo": "07554662557",
-  "emailAddress": "tonyandtriciamudge@sky.com",
-  "address1": "10 Millands Lane",
-  "city": "Bridgwater",
-  "county": "Somerset",
-  "postCode": "ta5 1ed",
-  "userId": "198d7a57-50d4-4adc-8b31-be5d41818704"
+ "City": "New Malden",
+ "ContactNo": "07663599474",
+ "County": "Surrey",
+ "Door": "19 Charter Court",
+ "EmailAddress": "janghyeonchoi@hotmail.com",
+ "FirstName": "Test",
+ "InstallationDate": "2020-07-21T00:00:00",
+ "LastName": "test",
+ "Model": "NCB 24 Combi",
+ "PostCode": "KT3 3BL",
+ "RegistrationDate": "2020-07-30T00:00:00",
+ "RegistrationId": "af8d4241-d26d-11ea-bd5f-73c1a19ae622",
+ "SearchIndex": "af8d4241-d26d-11ea-bd5f-73c1a19ae6220128T18X2438040NCB 24 Combi21/07/2020JamesJames07663599474janghyeonchoi@hotmail.com19 Charter CourtLinden GroveNew MaldenSurreyKT3 3BL30/07/202021/07/2020-12bf80404-6c2f-49c4-9eb1-6db07131672f",
+ "SerialNumber": "0128T18X2438040",
+ "UserId": "2bf80404-6c2f-49c4-9eb1-6db07131672f",
+ "WarrantyDate": "2030-07-21T00:00:00",
+ "WarrantyYear": 10
 }
 ```
 
@@ -283,46 +284,46 @@ GET /dates/:todays_date/registrations
 ```javascript
 GET /dates/20200908/registrations
 
-{
-  [
-    {
-      "registrationId": "cfcb77e0-ca64-11ea-8e5b-b1d62677deda",
-      "model": "LCB 700 Combi External 28KW",
-      "serialNumber": "1710U19Y0769003",
-      "installationDate": "09/07/2020",
-      "registrationDate": "20/07/2020",
-      "warrantyDate": "09/07/2030",
-      "warrantyYear": 10,
-      "firstName": "Tony",
-      "lastName": "Mudge",
-      "contactNo": "07554662557",
-      "emailAddress": "tonyandtriciamudge@sky.com",
-      "address1": "10 Millands Lane",
-      "city": "Bridgwater",
-      "county": "Somerset",
-      "postCode": "ta5 1ed",
-      "userId": "198d7a57-50d4-4adc-8b31-be5d41818704"
-    },  
-    {
-      "registrationId": "04732c10-d3f0-11ea-b6d7-759f92541fc9",
-      "model": "NCB 34 Combi",
-      "serialNumber": "0130J1870535001",
-      "installationDate": "01/08/2020",
-      "registrationDate": "01/08/2020",
-      "warrantyDate": "01/08/2028",
-      "warrantyYear": 8,
-      "firstName": "Kevin",
-      "lastName": "Lawson",
-      "contactNo": "07768310450",
-      "emailAddress": "fklawson@hotnail.com",
-      "address1": "32 Cove Hollow",
-      "city": "Bangor",
-      "county": "County Down",
-      "postCode": "BT19 6HT",
-      "userId": "1a1d9282-7f8f-4833-a9a0-2b3df06caf01"
-    }
-  ]
-}
+[
+ {
+  "City": "Edinburgh",
+  "ContactNo": "07540257195",
+  "County": "",
+  "Door": "49/1",
+  "EmailAddress": "thistleservices@btinternet.com",
+  "FirstName": "Alex",
+  "InstallationDate": "2020-03-01T00:00:00",
+  "LastName": "Mcrae",
+  "Model": "NCB 28 Combi",
+  "PostCode": "EH76RL",
+  "RegistrationDate": "2020-03-10T00:00:00",
+  "RegistrationId": "e473ada0-6319-11ea-8ea5-5994b062ab58",
+  "SearchIndex": "e473ada0-6319-11ea-8ea5-5994b062ab580129X1992565020NCB 28 Combi01/03/2020AlexMcrae07540257195thistleservices@btinternet.com49/1Craigentinny RoadEdinburghEH76RL10/03/202001/03/2020-1b94108b7-ea77-4cb1-b6cb-42e9e55187fd",
+  "SerialNumber": "0129X1992565020",
+  "UserId": "b94108b7-ea77-4cb1-b6cb-42e9e55187fd",
+  "WarrantyDate": "2028-03-01T00:00:00",
+  "WarrantyYear": 8
+ },
+ {
+  "City": "Bath",
+  "ContactNo": "07931793138",
+  "County": "Somerset",
+  "Door": "Eden Cottage",
+  "EmailAddress": "",
+  "FirstName": "Sylvie ",
+  "InstallationDate": "2020-03-10T00:00:00",
+  "LastName": "Tuk",
+  "Model": "ncb-28lhwe",
+  "PostCode": "BA2 5DU",
+  "RegistrationDate": "2020-03-10T00:00:00",
+  "RegistrationId": "acd22fc1-62b5-11ea-ad48-35fc8383ca74",
+  "SearchIndex": "acd22fc1-62b5-11ea-ad48-35fc8383ca746664D1662922016ncb-28lhwe10/03/2020Sylvie Tuk07931793138Eden CottageFarrs LaneBathSomersetBA2 5DU10/03/2020-1e9675f20-8e04-4ed2-83b1-4d0389fc097f",
+  "SerialNumber": "6664D1662922016",
+  "UserId": "e9675f20-8e04-4ed2-83b1-4d0389fc097f",
+  "WarrantyDate": "2027-03-10T00:00:00",
+  "WarrantyYear": 7
+ }
+]
 ```
 
 #### Response
