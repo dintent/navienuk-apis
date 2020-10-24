@@ -9,15 +9,17 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 
 | API Name | Development Status | Operation Period |
 | -------- | ------ | ------ |
-| [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Completed, ready to use | on request |
-| [Create or update a company](#create-or-update-a-company) | Completed, ready to use | Realtime |
-| [Get a company details](#get-a-company-details) | Completed, ready to use | on request |
-| [Get a registration details](#get-a-registration-details) | Completed, ready to use | on request |
-| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Completed, ready to use | daily(or on request) |
-| [Update Warranty](#update-warranty) | Completed, ready to use | Realtime |
- * sequence diagramme for the realtime APIs
-   - ['Create an account' flow](#create-an-account-flow)
-   - ['Update the warranty' flow](#update-the-warranty-flow)
+| [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Ready | on request |
+| [Create or update a company](#create-or-update-a-company) | Ready | Realtime |
+| [Get a company details](#get-a-company-details) | Completed, Ready | on request |
+| [Get a registration details](#get-a-registration-details) | Ready | on request |
+! [Get a daily list of new companies](#get-a-daily-list-of-new-companies) | Ready | daily (or on request) |
+| [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Ready | daily(or on request) |
+
+
+### sequence diagramme for the realtime APIs
+- ['Create an account' flow](#create-an-account-flow)
+- ['Update the warranty' flow](#update-the-warranty-flow)
 
 ## Authentication
 
@@ -158,7 +160,7 @@ GET /companies/207119
 ```
 
 
-### Get the company details that is created or updated on the given date
+### Get a daily list of new companies
 
 ```javascript
 GET /dates/:todays_date/companies
@@ -169,22 +171,32 @@ GET /dates/:todays_date/companies
 ```javascript
 GET /dates/20200908/companies
 {
-  [
-    {
-      "businessName": "All Gas services",
-      "address": "The Panorama Park Street Ashford Kent",
-      "postcode": "TN24 8DF",
-      "gasSafeNumber": "200001",
-      "OftecNumber": "xxxx",
-    },
-    {
-      "businessName": "Your Gas services",
-      "address": "The Regents Park Street, London",
-      "postcode": "N2 8DF",
-      "gasSafeNumber": "200000",
-      "OftecNumber": "xxxx",
-    }
-  ]
+    "DailyList": [
+        {
+            "GasSafeNumber": "622458",
+            "BusinessName": "Oscade Plumbing & heating Services Ltd ",
+            "Address": "9 Derby Road ",
+            "Postcode": "DE55 7AQ",
+            "OftecNumber": "",
+            "Date": "2020-09-22T00:00:00"
+        },
+        {
+            "GasSafeNumber": "217049",
+            "BusinessName": "Kjy Gas Services",
+            "Address": "23 Burnbank",
+            "Postcode": "EH20 9NE",
+            "OftecNumber": "",
+            "Date": "2020-09-22T00:00:00"
+        },
+        {
+            "GasSafeNumber": "226854",
+            "BusinessName": "RW Gas Services",
+            "Address": "",
+            "Postcode": "M27 4UR",
+            "OftecNumber": "",
+            "Date": "2020-09-22T00:00:00"
+        }
+    ]
 }
 ```
 
