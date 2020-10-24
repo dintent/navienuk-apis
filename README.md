@@ -11,9 +11,9 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | -------- | ------ | ------ |
 | [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | Ready | on request |
 | [Create or update a company](#create-or-update-a-company) | Ready | Realtime |
-| [Get a company details](#get-a-company-details) | Completed, Ready | on request |
+| [Get a company details](#get-a-company-details) | Ready | on request |
 | [Get a registration details](#get-a-registration-details) | Ready | on request |
-! [Get a daily list of new companies](#get-a-daily-list-of-new-companies) | Ready | daily (or on request) |
+| [Get a daily list of new companies](#get-a-daily-list-of-new-companies) | Ready | daily (or on request) |
 | [Get a daliy list of new registrations](#get-a-daliy-list-of-new-registrations) | Ready | daily(or on request) |
 
 
