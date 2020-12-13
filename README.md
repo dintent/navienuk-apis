@@ -10,6 +10,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | -------- | ------ |
 | [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | on request |
 | [Create or update a company](#create-or-update-a-company) | Realtime |
+| [Update an installer](#update-an-installer) | Realtime |
 | [Get a company details](#get-a-company-details) | on request |
 | [Get a registration details](#get-a-registration-details) | on request |
 | [Get a daily list of new companies](#get-a-daily-list-of-new-companies) | daily (or on request) |
@@ -116,6 +117,44 @@ PUT /companies/207119
 * 400 Bad Request: if the request is malformed
 * 403 Forbidden: if the correct api key is not in the request header
 * 200 Ok
+
+### Update an installer
+
+Update an installer details
+
+```javascript
+PATCH /installers/:username
+```
+
+#### Example
+
+```javascript
+PATCH /companies/40598970-0d95-11eb-8e3a-c394de094129
+{
+  "email": "andrew.chaa@yahoo.co.uk",
+  "familyName": "Chaa",
+  "givenName": "Andrew",
+  "phoneNumber": "+447590533111"
+}
+```
+
+#### Parameters
+
+| Name | Type | location | Description |
+| ---- | ---- | -------- | ----------- |
+| username | string (guid) | path | **key** unique user name |
+| familyName | string | json body | family name or last name of the user |
+| givenName | string | json body | given name or first name of the user |
+| phoneNumber | string | json body | the phone number of the user. It should have **country code** at the beginning |
+| oftecNumber | string | json body | (optional) the oil and heating tech number of the company |
+
+
+#### Response
+
+* 400 Bad Request: if the request is malformed
+* 403 Forbidden: if the correct api key is not in the request header
+* 204 NoContent: for successful request
+
 
 
 ## Company
