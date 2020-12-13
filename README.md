@@ -391,6 +391,8 @@ GET /dates/20200908/registrations
             "WarrantyYear": -1,
             "InstallerUsername": "f1cc36c0-2fc4-11eb-bdef-01257a370e44",
             "InstallerEmail": "james@email.com",
+            "InstallerGivenName": "James",
+            "InstallerFamilyName": "Cameron",            
             "InstallerFullname": "James Cameron",
             "InstallerGasSafeNumber": "303142"
         },      
@@ -413,6 +415,8 @@ GET /dates/20200908/registrations
             "WarrantyYear": 7,
             "InstallerUsername": "ffcc36c0-2fc4-11eb-bdef-01257a370e44",
             "InstallerEmail": "matthew@email.com",
+            "InstallerGivenName": "Matthew",
+            "InstallerFamilyName": "Pointer",            
             "InstallerFullname": "Matthew Pointer",
             "InstallerGasSafeNumber": "303143"
         }
