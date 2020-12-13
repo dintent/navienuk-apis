@@ -146,7 +146,6 @@ PATCH /installers/40598970-0d95-11eb-8e3a-c394de094129
 | familyName | string | json body | family name or last name of the user |
 | givenName | string | json body | given name or first name of the user |
 | phoneNumber | string | json body | the phone number of the user. It should have **country code** at the beginning |
-| oftecNumber | string | json body | (optional) the oil and heating tech number of the company |
 
 
 #### Response
