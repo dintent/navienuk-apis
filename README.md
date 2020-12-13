@@ -5,7 +5,7 @@ If you have any problems or requests, please contact [DEEPEYES App Support](app@
 
 All API access is over HTTPS, and all data is sent and received as JSON.
 
-## All APIs The AppServer Provide
+## All the APIs AppServer Provide
 | API Name | Operation Period |
 | -------- | ------ |
 | [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | on request |
