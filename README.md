@@ -373,25 +373,28 @@ GET /dates/:todays_date/registrations
 ```javascript
 GET /dates/20200908/registrations
 {
-    "DailyList": [
-        {
-            "City": "Truro",
-            "ContactNo": "07733000000",
-            "County": "cornwall",
-            "Door": "Pengarth",
-            "EmailAddress": "phill@btopenworld.com",
-            "FirstName": "Phil",
-            "InstallationDate": "2020-09-22T00:00:00",
-            "LastName": "Lastname",
-            "Model": "LCB 700 Combi External 28KW",
-            "PostCode": "TR00JR",
-            "RegistrationDate": "2020-09-22T00:00:00",
-            "RegistrationId": "a64cc811-fcc8-11ea-86b5-8b5fb3b124d3",
-            "SerialNumber": "1710P2010000000",
-            "UserId": "1d831f6a-b0bc-4522-a8cf-c01bac50585d",
-            "WarrantyDate": "2030-09-22T00:00:00",
-            "WarrantyYear": 10
-        },
+    "DailyList": [{
+            "City": "Newbiggin-by-the-Sea",
+            "ContactNo": "0777218ㅋㅋㅋㅋ",
+            "County": "Northumberland",
+            "Door": "Grasmere Terrace",
+            "EmailAddress": "email@sky.com",
+            "FirstName": "Joe ",
+            "InstallationDate": "2020-12-05T00:00:00",
+            "LastName": "Biden",
+            "Model": "LCB 700 Combi Internal 28KW",
+            "PostCode": "NE64 XXX",
+            "RegistrationDate": "2020-12-05T00:00:00",
+            "RegistrationId": "187b2171-370c-11eb-b652-e5dc519dcde7",
+            "SerialNumber": "1706Z19Z1169038",
+            "UserId": "7f9e2b9e-1280-4d17-a327-d741c2f284e9",
+            "WarrantyDate": "2019-12-05T00:00:00",
+            "WarrantyYear": -1,
+            "InstallerUsername": "f1cc36c0-2fc4-11eb-bdef-01257a370e44",
+            "InstallerEmail": "james@email.com",
+            "InstallerFullname": "James Cameron",
+            "InstallerGasSafeNumber": "303142"
+        }        
         {
             "City": "Lancaster ",
             "ContactNo": "0152000000",
@@ -408,7 +411,11 @@ GET /dates/20200908/registrations
             "SerialNumber": "0129R19Y1505012",
             "UserId": "dbed8649-d92a-4bc1-a539-a0140bbbb5ff",
             "WarrantyDate": "2027-09-22T00:00:00",
-            "WarrantyYear": 7
+            "WarrantyYear": 7,
+            "InstallerUsername": "ffcc36c0-2fc4-11eb-bdef-01257a370e44",
+            "InstallerEmail": "matthew@email.com",
+            "InstallerFullname": "Matthew Pointer",
+            "InstallerGasSafeNumber": "303143"
         }
     ]
 }
