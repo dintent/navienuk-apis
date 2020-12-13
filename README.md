@@ -394,7 +394,7 @@ GET /dates/20200908/registrations
             "InstallerEmail": "james@email.com",
             "InstallerFullname": "James Cameron",
             "InstallerGasSafeNumber": "303142"
-        }        
+        },      
         {
             "City": "Lancaster ",
             "ContactNo": "0152000000",
