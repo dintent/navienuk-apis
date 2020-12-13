@@ -129,7 +129,7 @@ PATCH /installers/:username
 #### Example
 
 ```javascript
-PATCH /companies/40598970-0d95-11eb-8e3a-c394de094129
+PATCH /installers/40598970-0d95-11eb-8e3a-c394de094129
 {
   "email": "andrew.chaa@yahoo.co.uk",
   "familyName": "Chaa",
