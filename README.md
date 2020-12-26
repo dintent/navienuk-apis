@@ -11,6 +11,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | on request |
 | [Create or update a company](#create-or-update-a-company) | Realtime |
 | [Update an installer](#update-an-installer) | Realtime |
+| [Update an registration](#update-an-registration) | Realtime |
 | [Get a company details](#get-a-company-details) | on request |
 | [Get a registration details](#get-a-registration-details) | on request |
 | [Get a daily list of new companies](#get-a-daily-list-of-new-companies) | daily (or on request) |
@@ -153,8 +154,61 @@ PATCH /installers/40598970-0d95-11eb-8e3a-c394de094129
 * 400 Bad Request: if the request is malformed
 * 403 Forbidden: if the correct api key is not in the request header
 * 204 NoContent: for successful request
+* 200 Ok
 
+### Update an registration
 
+Update an registration details
+
+```javascript
+PATCH /registrations/:serialNumber
+```
+
+#### Example
+
+```javascript
+PATCH /registrations/1478D1971749002
+{
+  "firstName": "Jang Test",
+  "lastName": "Test",
+  "email": "test@gmail.com,
+  "contactNo": "447590533111",
+  "postCode": "KT3 3BL",
+  "door": "1 Charter Court",
+  "street": "Linden Grove",
+  "city": "New Malden",
+  "county": "Surrey",
+  "installationDate": "11/11/2020",
+  "model": "LCB 700 Regular External 28KW",
+  "warrantyYear": -1
+  "registrationDate": "19/11/2020",
+}
+```
+
+#### Parameters (all fields are not required.)
+
+| Name | Type | location | Description |
+| ---- | ---- | -------- | ----------- |
+| firstName | string | json body | given name or first name of the user |
+| lastName | string | json body | family name or last name of the user |
+| email | string | json body | email address of the user |
+| phoneNumber | string | json body | the phone number of the user. It should have **country code** at the beginning |
+| postCode | string | json body | address detail of the user |
+| door | string | json body | address of the user |
+| street | string | json body | address of the user |
+| city | string | json body | address of the user |
+| county | string | json body | address of the user |
+| installationDate | string | json body | date when the boiler was installed |
+| model | string | json body | model name of the boiler installed |
+| warrantyYear | int | json body | warranty year to be covered, default is -1 |
+| registrationDate | string | json body | date when the installer put the registartion detail onto the mobile app |
+
+#### Response
+
+* 400 Bad Request: if the request is malformed
+* 403 Forbidden: if the correct api key is not in the request header
+* 204 NoContent: for successful request
+* 200 Ok
 
 ## Company
 
