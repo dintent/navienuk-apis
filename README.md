@@ -124,13 +124,13 @@ PUT /companies/207119
 Update an installer details
 
 ```javascript
-PATCH /installers/:username
+PATCH /cic/installers/:username
 ```
 
 #### Example
 
 ```javascript
-PATCH /installers/40598970-0d95-11eb-8e3a-c394de094129
+PATCH /cic/installers/40598970-0d95-11eb-8e3a-c394de094129
 {
   "email": "andrew.chaa@yahoo.co.uk",
   "familyName": "Chaa",
