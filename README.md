@@ -178,10 +178,10 @@ PATCH /registrations/1478D1971749002
   "street": "Linden Grove",
   "city": "New Malden",
   "county": "Surrey",
-  "installationDate": "11/11/2020",
+  "installationDate": "2020-11-19",
   "model": "LCB 700 Regular External 28KW",
   "warrantyYear": -1
-  "registrationDate": "19/11/2020",
+  "registrationDate": "2020-11-20",
 }
 ```
 
@@ -198,10 +198,10 @@ PATCH /registrations/1478D1971749002
 | street | string | json body | address of the user |
 | city | string | json body | address of the user |
 | county | string | json body | address of the user |
-| installationDate | string | json body | date when the boiler was installed |
+| installationDate | string | json body | date when the boiler was installed, ISO (yyyy-MM-dd) format |
 | model | string | json body | model name of the boiler installed |
 | warrantyYear | int | json body | warranty year to be covered, default is -1 |
-| registrationDate | string | json body | date when the installer put the registartion detail onto the mobile app |
+| registrationDate | string | json body | date when the installer put the registartion detail onto the mobile app, ISO (yyyy-MM-dd) format|
 
 #### Response
 
