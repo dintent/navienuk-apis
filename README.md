@@ -11,7 +11,7 @@ All API access is over HTTPS, and all data is sent and received as JSON.
 | [Update model and serial-prefix mappings](#update-model-and-serial-number-mappings) | on request |
 | [Create or update a company](#create-or-update-a-company) | Realtime |
 | [Update an installer](#update-an-installer) | Realtime |
-| [Update an registration](#update-an-registration) | Realtime |
+| [Update a registration](#update-a-registration) | Realtime |
 | [Get a company details](#get-a-company-details) | on request |
 | [Get a registration details](#get-a-registration-details) | on request |
 | [Get a daily list of new companies](#get-a-daily-list-of-new-companies) | daily (or on request) |
@@ -156,9 +156,9 @@ PATCH /cic/installers/40598970-0d95-11eb-8e3a-c394de094129
 * 204 NoContent: for successful request
 * 200 Ok
 
-### Update an registration
+### Update a registration
 
-Update an registration details
+Update a registration details
 
 ```javascript
 PATCH /registrations/:serialNumber
