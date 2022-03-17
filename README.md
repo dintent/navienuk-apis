@@ -171,7 +171,7 @@ PATCH /registrations/1478D1971749002
 {
   "firstName": "Jang Test",
   "lastName": "Test",
-  "email": "test@gmail.com,
+  "email": "test@gmail.com",
   "contactNo": "447590533111",
   "postCode": "KT3 3BL",
   "door": "1 Charter Court",
@@ -180,8 +180,8 @@ PATCH /registrations/1478D1971749002
   "county": "Surrey",
   "installationDate": "2020-11-19",
   "model": "LCB 700 Regular External 28KW",
-  "warrantyYear": -1
-  "registrationDate": "2020-11-20",
+  "warrantyYear": 7
+  "registrationDate": "2022-03-17",
 }
 ```
 
