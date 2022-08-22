@@ -32,7 +32,7 @@ POST /users
 {
     "firstname": "firstname",
     "lastname": "lastname",
-    "email": "{{$guid}}@email.com"
+    "email": "example@email.com"
 }
 ```
 
