@@ -35,6 +35,8 @@ POST /users
     "email": "example@email.com"
 }
 ```
+> DB Keys: 
+>  - email (string)
 
 #### Parameters
 NONE
@@ -58,17 +60,20 @@ POST /jobs
 #### Payload
 ```javascript
 {
-    "requestNo": "202201290016",
+    "jobId": "202201290016",
     "symptomCode": "E016",
     "symptomDetail": "No hot water",
     "repairPart": "aaabbbccc",
-    "repairtDetail": "adjust -",
+    "repairDetail": "adjust",
     "status": "in-progress",
     "createdAt": "",
     "companyId": "{{$guid}}",
-    "engineerEmail": "email@email.com"
+    "email": "email@email.com"
 }
 ```
+> DB Keys: 
+>  - jobId (string),
+>  - email (string)
 
 #### Parameters
 NONE
@@ -80,3 +85,4 @@ NONE
 * 201 created
 
 #### Example
+<img width="728" alt="image" src="https://user-images.githubusercontent.com/59367560/185975558-0956cb91-2d89-4f14-bf13-8f7580e9b039.png">
