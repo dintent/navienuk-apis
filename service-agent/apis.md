@@ -20,8 +20,9 @@ Environment of API
 | [Create a new service agent account](#create-user) | CIC | when a new account is created at CIC |
 | [Create a new job](#create-job) | CIC | when a job is created at CIC |
 
-### Create User
+### Create User (CIC -> Service Agent UK)
 Create a new account of a service agent
+
 #### Method / Endpoint
 ```javascript
 POST /users
@@ -52,25 +53,38 @@ NONE
 #### Example
 <img width="723" alt="image" src="https://user-images.githubusercontent.com/59367560/185818969-dbdbf158-7d5a-4f19-962e-e31500380b23.png">
 
-### Create Job
+### Create Job (CIC -> Service Agent UK)
 Create a new job to take an action
+
 #### Method / Endpoint
-```javascript
+```bash
 POST /jobs
 ```
 
 #### Payload
-```javascript
+```json
 {
-    "jobId": "202201290016",
-    "symptomCode": "E016",
-    "symptomDetail": "No hot water",
-    "repairPart": "aaabbbccc",
-    "repairDetail": "adjust",
-    "status": "in-progress",
-    "createdAt": "",
-    "companyId": "{{$guid}}",
-    "email": "email@email.com"
+  "jobNo": "2022008290002",
+  "companyId": "20102918293",
+  "customer": {
+    "name": "Michael Adam",
+    "phone": "07599 123456",
+    "address": {
+      "line1": "41 Victoria Road",
+      "line2": "",
+      "city": "Kingston Upon Thames",
+      "county": "Surrey",
+      "postcode": "KT1 2AB",
+      "country": "United Kingdom"
+    }
+  },
+  "product": {
+    "id": "product-id",
+    "name": "product name"
+  },
+  "serviceRequestDate": "2022-09-15",
+  "jobNotes": "Lorem Ipsum ...",
+  "symptom": "A0100004"
 }
 ```
 > DB Keys: 
