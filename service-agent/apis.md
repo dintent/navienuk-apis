@@ -21,7 +21,8 @@ Environment of API
 | [Create job](#create-job) | CIC -> Service Agent UK | when a job is created at CIC |
 | [Update job](#update-job) | Service Agent UK -> CIC | when a job is updated or completed |
 
-### Create User (CIC -> Service Agent UK)
+### Create User
+(CIC -> Service Agent UK)
 Create a new account of a service agent
 
 #### Method / Endpoint
@@ -54,7 +55,8 @@ NONE
 #### Example
 <img width="723" alt="image" src="https://user-images.githubusercontent.com/59367560/185818969-dbdbf158-7d5a-4f19-962e-e31500380b23.png">
 
-### Create Job (CIC -> Service Agent UK)
+### Create Job 
+(CIC -> Service Agent UK)
 Create a new job to take an action
 
 #### Method / Endpoint
@@ -104,7 +106,8 @@ NONE
 #### Example
 <img width="728" alt="image" src="https://user-images.githubusercontent.com/59367560/185975558-0956cb91-2d89-4f14-bf13-8f7580e9b039.png">
 
-### Update Job (Service Agent UK -> CIC)
+### Update Job 
+(Service Agent UK -> CIC)
 Update job when the job is completed or in progress
 
 #### Method / Endpoint
