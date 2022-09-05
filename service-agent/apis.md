@@ -30,9 +30,11 @@ POST /users
 #### Payload
 ```javascript
 {
-    "firstname": "firstname",
-    "lastname": "lastname",
-    "email": "example@email.com"
+  "companyId", "12020394",
+  "companyName", "Guildford Gas Engineers",
+  "firstname": "firstname",
+  "lastname": "lastname",
+  "email": "example@email.com"
 }
 ```
 > DB Keys: 
