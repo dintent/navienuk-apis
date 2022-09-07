@@ -74,8 +74,8 @@ POST /jobs
     "phone": "07599 123456",
     "address": {
       "line1": "41 Victoria Road",
-      "line2": "",
-      "city": "Kingston Upon Thames",
+      "line2": "Kingston Upon Thames",
+      "city": "",
       "county": "Surrey",
       "postcode": "KT1 2AB",
       "country": "United Kingdom"
