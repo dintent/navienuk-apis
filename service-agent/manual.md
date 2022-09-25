@@ -5,8 +5,8 @@
 
 ## Screens and Description
 ### Splash Screen
-![Screenshot_20220925-233654](https://user-images.githubusercontent.com/59367560/192169616-bb7f5caf-cbd6-445c-a2b6-8a5c96d67cba.png)
-![Screenshot_20220925-233729](https://user-images.githubusercontent.com/59367560/192169622-9b6082d4-cf71-4711-ba1f-d47cafead2f6.png)
+![image](https://user-images.githubusercontent.com/59367560/192169797-791f49fe-61ea-48a8-99d3-28c3488e0695.png)
+
 
 ### Sign-up and Sign-in
 ![Screenshot_20220925-233735](https://user-images.githubusercontent.com/59367560/192169627-56cd424f-305d-492d-9882-0a4dd8da52f0.png)
