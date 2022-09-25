@@ -3,6 +3,12 @@
 - Version : 1.1.0
 - Updated at : 2022.09.25
 
+## User Credentials
+- Test User
+  - Username : testuser101.apps@gmail.com
+  - Password : Password
+  > this is shared with Google for a Android App Release
+
 ## Screens and Description
 ### Splash Screen
 ![image](https://user-images.githubusercontent.com/59367560/192169797-791f49fe-61ea-48a8-99d3-28c3488e0695.png)
