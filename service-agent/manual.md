@@ -12,19 +12,33 @@
 ## Screens and Description
 ### Splash Screen
 ![image](https://user-images.githubusercontent.com/59367560/192169797-791f49fe-61ea-48a8-99d3-28c3488e0695.png)
+1. Splash screen
+  - Please wait for the loading for Sign In screen.
 
 ![image](https://user-images.githubusercontent.com/59367560/192169844-7d2b41f2-7101-4fa9-afed-cefc62a13989.png)
 
+2. Sign In / Sign  Up screen
+  - Please click the Sign In button.
+  
+  
 
 ### Sign-up and Sign-in
 ![image](https://user-images.githubusercontent.com/59367560/192169853-946d6889-5b6e-4ce0-98f6-d5219d495e96.png)
 
+3. Sign In / Sign UP screen
+  - Please enter your email and password and click the Sign In button for your log in.
+
 ![image](https://user-images.githubusercontent.com/59367560/192169860-0f454950-8844-4549-9e54-730318e5cccf.png)
 > Login Error with message
-
+  - If the log in detail is incorrect, the error message will pop up. Please try again with the correct log in detail.
+  - 
 ### Job Management
 #### List jobs
 ![image](https://user-images.githubusercontent.com/59367560/192169880-7d086d02-96b6-45fe-9cbe-b36cf28db52b.png)
+
+4. Dashboard screen
+  - Dashboard shows your job list.
+  - 
 
 
 #### Details of a seleted job
